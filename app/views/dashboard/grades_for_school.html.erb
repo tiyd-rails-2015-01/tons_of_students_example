@@ -1,0 +1,18 @@
+<h1>Grades for <%= @school.name %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Class Name</th>
+      <th>Grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @grades.each do |g| %>
+      <tr>
+        <td><%= g.class_name %></td>
+        <td><%= g.grade %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
